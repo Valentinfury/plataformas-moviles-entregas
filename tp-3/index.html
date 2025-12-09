@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TP3 - Especificidad CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body {
+			font-size: 18px;
+			background-color: #ffe;
+			color: #210;
+		}
+
+		#contenedor {
+			max-width: 40ch;
+			margin: 2rem auto;
+			padding: 1rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+			text-align: left;
+		}
+
+		p {
+			font-family: sans-serif;
+		}
+
+		#primer-parrafo {
+			font-size: 1.3rem;
+			background-color: #eec;
+		}
+
+		p.importante em {
+			font-weight: bold;
+			color: #144;
+		}
+
+		p.musica a {
+			outline: none;
+			text-decoration: none;
+		}
+
+		p.musica a:hover {
+			text-decoration: underline;
+			background-color: #ccd;
+		}
+
+		body p.fuente.parrafo {
+			color: #999 !important;
+			font-size: 0.9rem;
+			opacity: 75%;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<article id="contenedor">
+		<h1 class="titulo">Michael Jackson </h1>
+		
+		<p id="primer-parrafo" class="importante">
+			fue un cantante, compositor, productor y bailarín estadounidense.​ Apodado como, <em>Rey del Pop</em> sus contribuciones y reconocimiento en la <a href="https://es.wikipedia.org/wiki/Historia_de_la_m%C3%BAsica">Historia de la musica</a>
+		</p>
+		
+		<p class="musica">
+			Su música incluye una amplia variedad de géneros como el <a href="https://es.wikipedia.org/wiki/Pop">Pop</a> y <a href="https://es.wikipedia.org/wiki/Rhythm_and_blues">Rhythm and blues</a> y es reconocido como el <span class="complicado" style="color: #622">«artista musical más exitoso de todos los tiempos»</span>por los <a href="https://es.wikipedia.org/wiki/Libro_Guinness_de_los_r%C3%A9cords">Guinness World Records.</a>
+		</p>
+	</article>
+
+	<p class="fuente parrafo">
+		Fuente: <a href=https://es.wikipedia.org/wiki/Michael_Jackson#>https://es.wikipedia.org/wiki/Michael_Jackson#</a>
+	</p>
+</body>
+</html>
